@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trident Millers L.T.D.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* ===== GLOBAL STYLES ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      color: #1f2933;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      background: white;
+      z-index: 100;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      color: orangered;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      font-size: 14px;
+      color: #4b5563;
+    }
+
+    .nav-links a:hover {
+      color: black;
+    }
+
+    .btn {
+      background: orangered;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-size: 13px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #000;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      padding: 80px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      color:#111827;
+    }
+
+    .hero p {
+      color: #6b7280;
+      margin-bottom: 25px;
+    }
+
+    .hero-box {
+      background: #f3f4f6;
+      height: 280px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #9ca3af;
+      font-size: 14px;
+    }
+
+    /* ===== SECTIONS ===== */
+    section {
+      padding: 70px 0;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 35px;
+      color: orangered;
+    }
+
+    .muted {
+      color: #6b7280;
+    }
+
+    /* ===== PRODUCTS ===== */
+    .products {
+      background: #f9fafb;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 22px;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+      transition: 0.25s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 5px 18px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #6b7280;
+    }
+
+    /* ===== ABOUT ===== */
+    .about p {
+      max-width: 700px;
+      color: #6b7280;
+    }
+
+    /* ===== CONTACT ===== */
+    .contact-box {
+      background: #111827;
+      color: white;
+      padding: 35px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .contact-box p {
+      color: #d1d5db;
+      margin: 8px 0;
+      font-size: 14px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 25px 0;
+      font-size: 13px;
+      color: #6b7280;
+      text-align: center;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media(max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Trident Millers Ltd.</div>
+
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#products">Products</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <a href="#contact" class="btn">Get in Touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <div class="container hero" id="home">
+    <div>
+      <h1>Quality Food Products You Can Trust</h1>
+      <p>
+        Trident Millers manufactures high-quality, reliable food products designed
+        to serve households and businesses with consistency, safety, and excellence.
+      </p>
+      <a href="#products" class="btn">View Products</a>
+    </div>
+
+    <div class="hero-box">
+      Factory / Corporate Visual
+    </div>
+  </div>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section class="products" id="products">
+    <div class="container">
+      <h2>Our Products</h2>
+
+      <div class="product-grid">
+        <div class="card">
+          <h3>Trident Rice</h3>
+          <p>Premium quality rice processed with strict manufacturing standards.</p>
+        </div>
+
+        <div class="card">
+          <h3>Shoka Maize Meal</h3>
+          <p>Finely milled maize meal for nutritious, everyday meals.</p>
+        </div>
+
+        <div class="card">
+          <h3>Shoka Fry Cooking Oil</h3>
+          <p>Refined cooking oil delivering quality taste and performance.</p>
+        </div>
+
+        <div class="card">
+          <h3>Uji Ndimu</h3>
+          <p>A refreshing, nutritious porridge blend with a unique flavor.</p>
+        </div>
+
+        <div class="card">
+          <h3>Uji Mix</h3>
+          <p>Wholesome porridge mix designed for energy and nourishment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2>About Trident Millers</h2>
+      <p>
+        Trident Millers is dedicated to producing safe, high-quality food products
+        through modern milling practices and strict quality control. Our mission is
+        to provide dependable nutrition solutions while maintaining excellence,
+        integrity, and customer satisfaction.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+
+      <div class="contact-box">
+        <p><strong>Trident Millers Ltd.</strong></p>
+        <p>Email: tridentmillers@gmail.com</p>
+        <p>Phone: +254 784 194 111</p>
+        <p>P.O. Box 7-40127, Nyangori, Kenya</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    © <span id="year"></span> Trident Millers. All Rights Reserved.
+  </footer>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    // Dynamic Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Smooth Scroll
+    document.querySelectorAll('a[href^=\"#\"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href"))
+          .scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  </script>
+
+</body>
+</html>
